@@ -350,7 +350,8 @@ Dir.chdir HOMEBREW_REPOSITORY do
     curl_flags = "fsSL"
     curl_flags += "k" if macos_version < "10.6"
     core_tap = "#{HOMEBREW_PREFIX}/Homebrew/Library/Taps/homebrew/homebrew-core"
-    system "/bin/bash -o pipefail -c '/usr/bin/curl -#{curl_flags} #{BREW_REPO}/tarball/master | /usr/bin/tar xz -m --strip 1'"
+    system "/bin/bash -o pipefail -c '/Users/railsonrames/Desktop/Homebrew-brew-1.7.1-25-g478f50f.tar.gz | /usr/bin/tar xz -m --strip 1'"
+    echo "Makes me wonder, uhuh uuuuu"
 
     system "ln", "-sf", "#{HOMEBREW_REPOSITORY}/bin/brew", "#{HOMEBREW_PREFIX}/bin/brew"
 
